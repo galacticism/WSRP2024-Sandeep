@@ -1,1 +1,72 @@
-Notebook[{}]
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='WolframDesktop 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       161,          7]
+NotebookDataLength[      2043,         62]
+NotebookOptionsPosition[      1531,         44]
+NotebookOutlinePosition[      1971,         61]
+CellTagsIndexPosition[      1928,         58]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Introduction", "Title",
+ CellChangeTimes->{{3.9289255536927814`*^9, 
+  3.928925575209379*^9}},ExpressionUUID->"af5eed60-1c56-e44c-90ce-\
+1bc038c3d05a"],
+
+Cell["\<\
+
+This project\[CloseCurlyQuote]s purpose is to examine untrained neural \
+networks with randomly generated weights and biases, and although this limits \
+the real-world applications of the models, it is very useful in understanding \
+neural network behavior. Applying common activation functions to these \
+initialized networks and modifying the network depth allows us to visually \
+represent the initial outputs . \
+\>", "Text",
+ CellChangeTimes->{{3.92892557667774*^9, 3.928925597277426*^9}, {
+  3.9289257102963486`*^9, 3.9289258534020596`*^9}, {3.9289258927072277`*^9, 
+  3.9289259002968063`*^9}, {3.9289262246082077`*^9, 3.9289262494203987`*^9}, {
+  3.9289263256370354`*^9, 
+  3.928926363701023*^9}},ExpressionUUID->"f5a97fe4-c9ba-ad48-9307-\
+c22e1d39c1b8"]
+}, Open  ]]
+},
+WindowSize->{1152, 579.6},
+WindowMargins->{{
+  Automatic, -5.399999999999864}, {-5.399999999999977, Automatic}},
+FrontEndVersion->"14.0 for Microsoft Windows (64-bit) (December 16, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"9b51bf37-2c74-c546-9f6e-7c756df31d95"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[583, 22, 157, 3, 98, "Title",ExpressionUUID->"af5eed60-1c56-e44c-90ce-1bc038c3d05a"],
+Cell[743, 27, 772, 14, 104, "Text",ExpressionUUID->"f5a97fe4-c9ba-ad48-9307-c22e1d39c1b8"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
