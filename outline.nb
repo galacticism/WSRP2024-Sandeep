@@ -1,0 +1,186 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='WolframDesktop 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       161,          7]
+NotebookDataLength[      6685,        176]
+NotebookOptionsPosition[      4435,        135]
+NotebookOutlinePosition[      4875,        152]
+CellTagsIndexPosition[      4832,        149]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["\<\
+Examining the Effects of Randomly Generated Weights and Biases on \
+Distributions of Outputs of Untrained Neural Networks \
+\>", "Title",
+ CellChangeTimes->{{3.9289420970503674`*^9, 
+  3.9289421713211384`*^9}},ExpressionUUID->"6da793bf-2c2d-af4e-9630-\
+3f43c8e10936"],
+
+Cell["Abstract", "Section",
+ CellChangeTimes->{{3.928943203077032*^9, 
+  3.9289432045991116`*^9}},ExpressionUUID->"10ae8e7a-fee9-ed4a-9b2e-\
+83c2c3227882"],
+
+Cell["Introduction", "Section",
+ CellChangeTimes->{{3.928943021613764*^9, 
+  3.928943023446064*^9}},ExpressionUUID->"5dbe71aa-31b9-5d43-989f-\
+e14f6aba234d"],
+
+Cell["Background Information", "Section",
+ CellChangeTimes->{{3.9289430274067764`*^9, 
+  3.9289430306087494`*^9}},ExpressionUUID->"e38f2fdf-01b5-7d47-be91-\
+5cfa2b7a9d2f"],
+
+Cell["Why Untrained Neural Networks?", "Section",
+ CellChangeTimes->{{3.9289422759596443`*^9, 3.9289422874849033`*^9}, {
+  3.9289424662512646`*^9, 
+  3.9289424724599514`*^9}},ExpressionUUID->"a0f7fe25-031f-a241-9a01-\
+8fb93a1fe678"],
+
+Cell[CellGroupData[{
+
+Cell["Initialization", "Section",
+ CellChangeTimes->{{3.928942480970793*^9, 
+  3.9289424840041027`*^9}},ExpressionUUID->"10fd1a65-6045-814d-a8d6-\
+681feac44101"],
+
+Cell["Generating Weights and Biases", "Subsection",
+ CellChangeTimes->{{3.928942309987118*^9, 
+  3.9289423165445366`*^9}},ExpressionUUID->"7b7b60df-a4e3-5445-ae04-\
+a418cc172627"],
+
+Cell["Implementing Activation Functions", "Subsection",
+ CellChangeTimes->{{3.928942333829056*^9, 
+  3.9289423562687473`*^9}},ExpressionUUID->"af8944a2-88db-484b-a56b-\
+552e71a358d8"]
+}, Open  ]],
+
+Cell["Manipulation of Network Parameters", "Section",
+ CellChangeTimes->{{3.92894230260643*^9, 3.928942303136305*^9}, {
+  3.92894238693025*^9, 3.9289424196750984`*^9}, {3.9289425960083103`*^9, 
+  3.9289426106383095`*^9}},ExpressionUUID->"b492fb57-3157-b34d-a307-\
+128a6e2bca01"],
+
+Cell[CellGroupData[{
+
+Cell["Output Distributions", "Section",
+ CellChangeTimes->{{3.9289425153089848`*^9, 3.928942517992445*^9}, {
+  3.9289426146040154`*^9, 
+  3.9289426174783516`*^9}},ExpressionUUID->"fd6415f2-29bc-964e-8292-\
+66e27c669120"],
+
+Cell["Comparisons to Original Functions", "Subsection",
+ CellChangeTimes->{{3.9289426933245144`*^9, 
+  3.928942721624939*^9}},ExpressionUUID->"e6e85ba2-b14a-4948-8c54-\
+e63ed3c7a8a8"],
+
+Cell["\[OpenCurlyDoubleQuote]Messy\[CloseCurlyDoubleQuote] vs \
+\[OpenCurlyDoubleQuote]Clean\[CloseCurlyDoubleQuote]", "Subsection",
+ CellChangeTimes->{
+  3.9289427253959255`*^9},ExpressionUUID->"4e99063e-0db5-fa45-a9b9-\
+97813aa73265"],
+
+Cell[CellGroupData[{
+
+Cell["Results of Parameter Manipulation", "Subsection",
+ CellChangeTimes->{{3.928942730756983*^9, 3.928942767349676*^9}, {
+  3.9289428313629913`*^9, 
+  3.9289428377916317`*^9}},ExpressionUUID->"8f4b5c44-400d-a64a-ac95-\
+73865b489029"],
+
+Cell["Standard Deviation", "Subsubsection",
+ CellChangeTimes->{{3.9289428504897594`*^9, 
+  3.928942853142746*^9}},ExpressionUUID->"c61e08e3-d762-0d4f-9973-\
+128c7ab8fcf6"],
+
+Cell["Weight Distribution Shape", "Subsubsection",
+ CellChangeTimes->{{3.9289428615432606`*^9, 
+  3.9289428717206345`*^9}},ExpressionUUID->"1af0d7ef-8db9-5a4e-82d4-\
+7e2832a309d4"],
+
+Cell["Network Structure", "Subsubsection",
+ CellChangeTimes->{{3.928942917155136*^9, 
+  3.9289429238342896`*^9}},ExpressionUUID->"9b7c468b-809a-034c-bf58-\
+cc5e214eb739"]
+}, Open  ]]
+}, Open  ]],
+
+Cell["Conclusion", "Section",
+ CellChangeTimes->{{3.9289429397062874`*^9, 
+  3.928942947964342*^9}},ExpressionUUID->"594de8d5-af79-2e49-b90e-\
+f15351ac8271"],
+
+Cell["Implications for Future Research", "Section",
+ CellChangeTimes->{{3.928942953174202*^9, 
+  3.928942959861124*^9}},ExpressionUUID->"0645500b-8c8c-114d-a86f-\
+da9ab615d112"],
+
+Cell["Bibliography", "Section",
+ CellChangeTimes->{{3.9289430073226185`*^9, 
+  3.928943009786438*^9}},ExpressionUUID->"5e3eead6-dcc0-de45-a8de-\
+dcd3428b3fd0"]
+}, Open  ]]
+},
+WindowSize->{1152, 579.6},
+WindowMargins->{{
+  Automatic, -5.399999999999864}, {-5.399999999999977, Automatic}},
+FrontEndVersion->"14.0 for Microsoft Windows (64-bit) (December 16, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"aa9d075f-7910-3846-bead-179e905eb0bf"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[583, 22, 277, 6, 222, "Title",ExpressionUUID->"6da793bf-2c2d-af4e-9630-3f43c8e10936"],
+Cell[863, 30, 155, 3, 67, "Section",ExpressionUUID->"10ae8e7a-fee9-ed4a-9b2e-83c2c3227882"],
+Cell[1021, 35, 157, 3, 53, "Section",ExpressionUUID->"5dbe71aa-31b9-5d43-989f-e14f6aba234d"],
+Cell[1181, 40, 171, 3, 53, "Section",ExpressionUUID->"e38f2fdf-01b5-7d47-be91-5cfa2b7a9d2f"],
+Cell[1355, 45, 232, 4, 53, "Section",ExpressionUUID->"a0f7fe25-031f-a241-9a01-8fb93a1fe678"],
+Cell[CellGroupData[{
+Cell[1612, 53, 161, 3, 53, "Section",ExpressionUUID->"10fd1a65-6045-814d-a8d6-681feac44101"],
+Cell[1776, 58, 179, 3, 54, "Subsection",ExpressionUUID->"7b7b60df-a4e3-5445-ae04-a418cc172627"],
+Cell[1958, 63, 183, 3, 38, "Subsection",ExpressionUUID->"af8944a2-88db-484b-a56b-552e71a358d8"]
+}, Open  ]],
+Cell[2156, 69, 278, 4, 67, "Section",ExpressionUUID->"b492fb57-3157-b34d-a307-128a6e2bca01"],
+Cell[CellGroupData[{
+Cell[2459, 77, 220, 4, 53, "Section",ExpressionUUID->"fd6415f2-29bc-964e-8292-66e27c669120"],
+Cell[2682, 83, 183, 3, 54, "Subsection",ExpressionUUID->"e6e85ba2-b14a-4948-8c54-e63ed3c7a8a8"],
+Cell[2868, 88, 236, 4, 38, "Subsection",ExpressionUUID->"4e99063e-0db5-fa45-a9b9-97813aa73265"],
+Cell[CellGroupData[{
+Cell[3129, 96, 234, 4, 38, "Subsection",ExpressionUUID->"8f4b5c44-400d-a64a-ac95-73865b489029"],
+Cell[3366, 102, 171, 3, 45, "Subsubsection",ExpressionUUID->"c61e08e3-d762-0d4f-9973-128c7ab8fcf6"],
+Cell[3540, 107, 180, 3, 37, "Subsubsection",ExpressionUUID->"1af0d7ef-8db9-5a4e-82d4-7e2832a309d4"],
+Cell[3723, 112, 170, 3, 37, "Subsubsection",ExpressionUUID->"9b7c468b-809a-034c-bf58-cc5e214eb739"]
+}, Open  ]]
+}, Open  ]],
+Cell[3920, 119, 157, 3, 67, "Section",ExpressionUUID->"594de8d5-af79-2e49-b90e-f15351ac8271"],
+Cell[4080, 124, 177, 3, 53, "Section",ExpressionUUID->"0645500b-8c8c-114d-a86f-da9ab615d112"],
+Cell[4260, 129, 159, 3, 53, "Section",ExpressionUUID->"5e3eead6-dcc0-de45-a8de-dcd3428b3fd0"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
