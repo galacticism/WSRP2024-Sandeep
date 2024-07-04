@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       161,          7]
-NotebookDataLength[    119720,       2252]
-NotebookOptionsPosition[    118719,       2224]
-NotebookOutlinePosition[    119159,       2241]
-CellTagsIndexPosition[    119116,       2238]
+NotebookDataLength[    129638,       2435]
+NotebookOptionsPosition[    128636,       2407]
+NotebookOutlinePosition[    129076,       2424]
+CellTagsIndexPosition[    129033,       2421]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -46,7 +46,35 @@ Cell[BoxData[
         "\"\<Activation Function\>\"", ",", "\"\<Formula\>\"", ",", 
          "\"\<Graph\>\"", ",", "\"\<Description\>\""}], "}"}], ",", 
        RowBox[{"{", 
-        RowBox[{"\"\<Ramp (ReLU)\>\"", ",", "\"\<f(x) = Max[0, x]\>\"", ",", 
+        RowBox[{
+        "\"\<Ramp (ReLU)\>\"", ",", 
+         "\"\<\!\(\*TemplateBox[<|\"boxes\" -> FormBox[
+RowBox[{
+StyleBox[\"f\", \"TI\"], 
+RowBox[{\"(\", 
+StyleBox[\"x\", \"TI\"], \")\"}], \"\[LongEqual]\"}], TraditionalForm], \
+\"errors\" -> {}, \"input\" -> \"f (x) = \", \"state\" -> \
+\"Boxes\"|>,\"TeXAssistantTemplate\"]\){\n   \!\(\*TemplateBox[<|\"boxes\" -> \
+FormBox[\"0\", TraditionalForm], \"errors\" -> {}, \"input\" -> \" 0\", \
+\"state\" -> \"Boxes\"|>,\"TeXAssistantTemplate\"]\) \
+\!\(\*TemplateBox[<|\"boxes\" -> FormBox[\"\[Rule]\", TraditionalForm], \
+\"errors\" -> {}, \"input\" -> \"\\\\rightarrow\", \"state\" -> \
+\"Boxes\"|>,\"TeXAssistantTemplate\"]\) \!\(\*TemplateBox[<|\"boxes\" -> \
+FormBox[
+RowBox[{
+StyleBox[\"x\", \"TI\"], \"<\", \"0\"}], TraditionalForm], \"errors\" -> {}, \
+\"input\" -> \"x < 0\", \"state\" -> \"Boxes\"|>,\"TeXAssistantTemplate\"]\),\
+\n   \!\(\*TemplateBox[<|\"boxes\" -> FormBox[
+StyleBox[\"x\", \"TI\"], TraditionalForm], \"errors\" -> {}, \"input\" -> \"x\
+\", \"state\" -> \"Boxes\"|>,\"TeXAssistantTemplate\"]\) \!\(\*TemplateBox[<|\
+\"boxes\" -> FormBox[\"\[Rule]\", TraditionalForm], \"errors\" -> {}, \"input\
+\" -> \"\\\\rightarrow\", \"state\" -> \
+\"Boxes\"|>,\"TeXAssistantTemplate\"]\) \!\(\*TemplateBox[<|\"boxes\" -> \
+FormBox[
+RowBox[{
+StyleBox[\"x\", \"TI\"], \"\[GreaterEqual]\", \"0\"}], TraditionalForm], \
+\"errors\" -> {}, \"input\" -> \"x \\\\geq 0\", \"state\" -> \
+\"Boxes\"|>,\"TeXAssistantTemplate\"]\)\n}\n\>\"", ",", 
          RowBox[{"Plot", "[", 
           RowBox[{
            RowBox[{"Max", "[", 
@@ -59,7 +87,31 @@ Cell[BoxData[
 for positive values, making it a piecewise linear function.\>\""}], "}"}], 
        ",", 
        RowBox[{"{", 
-        RowBox[{"\"\<Tanh\>\"", ",", "\"\<f(x) = Tanh[x]\>\"", ",", 
+        RowBox[{
+        "\"\<Tanh\>\"", ",", "\"\<\!\(\*TemplateBox[<|\"boxes\" -> FormBox[
+RowBox[{
+StyleBox[\"f\", \"TI\"], 
+RowBox[{\"(\", 
+StyleBox[\"x\", \"TI\"], \")\"}], \"\[LongEqual]\", 
+FractionBox[
+RowBox[{
+SuperscriptBox[
+StyleBox[\"e\", \"TI\"], 
+StyleBox[\"x\", \"TI\"]], \"-\", 
+SuperscriptBox[
+StyleBox[\"e\", \"TI\"], 
+RowBox[{\"-\", 
+StyleBox[\"x\", \"TI\"]}]]}], 
+RowBox[{
+SuperscriptBox[
+StyleBox[\"e\", \"TI\"], 
+StyleBox[\"x\", \"TI\"]], \"+\", 
+SuperscriptBox[
+StyleBox[\"e\", \"TI\"], 
+RowBox[{\"-\", 
+StyleBox[\"x\", \"TI\"]}]]}]]}], TraditionalForm], \"errors\" -> {}, \
+\"input\" -> \"f(x) = \\\\frac{e^x - e^{-x}}{e^x + e^{-x}}\", \"state\" -> \
+\"Boxes\"|>,\"TeXAssistantTemplate\"]\)\>\"", ",", 
          RowBox[{"Plot", "[", 
           RowBox[{
            RowBox[{"Tanh", "[", "x", "]"}], ",", 
@@ -71,7 +123,19 @@ for positive values, making it a piecewise linear function.\>\""}], "}"}],
 symmetric around the origin, so negative inputs produce negative outputs and \
 positive inputs produce positive outputs.\>\""}], "}"}], ",", 
        RowBox[{"{", 
-        RowBox[{"\"\<Sin\>\"", ",", "\"\<f(x) = Sin[x]\>\"", ",", 
+        RowBox[{
+        "\"\<Sin\>\"", ",", "\"\<\!\(\*TemplateBox[<|\"boxes\" -> FormBox[
+RowBox[{
+StyleBox[\"f\", \"TI\"], 
+RowBox[{\"(\", 
+StyleBox[\"x\", \"TI\"], \")\"}], \"\[LongEqual]\", 
+StyleBox[\"S\", \"TI\"], 
+StyleBox[\"i\", \"TI\"], 
+StyleBox[\"n\", \"TI\"], 
+RowBox[{\"[\", 
+StyleBox[\"x\", \"TI\"], \"]\"}]}], TraditionalForm], \"errors\" -> {}, \
+\"input\" -> \"f (x) = Sin[x]\", \"state\" -> \
+\"Boxes\"|>,\"TeXAssistantTemplate\"]\)\>\"", ",", 
          RowBox[{"Plot", "[", 
           RowBox[{
            RowBox[{"Sin", "[", "x", "]"}], ",", 
@@ -84,7 +148,21 @@ positive inputs produce positive outputs.\>\""}], "}"}], ",",
          "\"\<Sin outputs sin(x) for any input x.\>\""}], "}"}], ",", 
        RowBox[{"{", 
         RowBox[{
-        "\"\<Sigmoid\>\"", ",", "\"\<f(x) = 1 / (1 + Exp[-x])\>\"", ",", 
+        "\"\<Sigmoid\>\"", ",", "\"\<\!\(\*TemplateBox[<|\"boxes\" -> FormBox[
+RowBox[{
+StyleBox[\"f\", \"TI\"], 
+RowBox[{\"(\", 
+StyleBox[\"x\", \"TI\"], \")\"}], \"\[LongEqual]\", \"1\", \"/\", 
+RowBox[{\"(\", 
+RowBox[{\"1\", \"+\", 
+StyleBox[\"E\", \"TI\"], 
+StyleBox[\"x\", \"TI\"], 
+StyleBox[\"p\", \"TI\"], 
+RowBox[{\"[\", 
+RowBox[{\"-\", 
+StyleBox[\"x\", \"TI\"]}], \"]\"}]}], \")\"}]}], TraditionalForm], \"errors\" \
+-> {}, \"input\" -> \"f (x) = 1 / (1 + Exp[-x])\", \"state\" -> \
+\"Boxes\"|>,\"TeXAssistantTemplate\"]\)\>\"", ",", 
          RowBox[{"Plot", "[", 
           RowBox[{
            RowBox[{"1", "/", 
@@ -101,7 +179,34 @@ difference is that it maps input values to the range (0, 1) instead.\>\""}],
         "}"}], ",", 
        RowBox[{"{", 
         RowBox[{
-        "\"\<Threshold\>\"", ",", "\"\<f(x) = If[x > 0, 1, 0]\>\"", ",", 
+        "\"\<Threshold\>\"", ",", 
+         "\"\<\!\(\*TemplateBox[<|\"boxes\" -> FormBox[
+RowBox[{
+StyleBox[\"f\", \"TI\"], 
+RowBox[{\"(\", 
+StyleBox[\"x\", \"TI\"], \")\"}], \"\[LongEqual]\"}], TraditionalForm], \
+\"errors\" -> {}, \"input\" -> \"f (x) =\", \"state\" -> \
+\"Boxes\"|>,\"TeXAssistantTemplate\"]\){\n   \!\(\*TemplateBox[<|\"boxes\" -> \
+FormBox[\"0\", TraditionalForm], \"errors\" -> {}, \"input\" -> \" 0\", \
+\"state\" -> \"Boxes\"|>,\"TeXAssistantTemplate\"]\) \
+\!\(\*TemplateBox[<|\"boxes\" -> FormBox[\"\[Rule]\", TraditionalForm], \
+\"errors\" -> {}, \"input\" -> \"\\\\rightarrow\", \"state\" -> \
+\"Boxes\"|>,\"TeXAssistantTemplate\"]\) \!\(\*TemplateBox[<|\"boxes\" -> \
+FormBox[
+RowBox[{
+StyleBox[\"x\", \"TI\"], \"\[LessEqual]\", \"0\"}], TraditionalForm], \
+\"errors\" -> {}, \"input\" -> \"x \\\\leq 0\", \"state\" -> \
+\"Boxes\"|>,\"TeXAssistantTemplate\"]\),\n   \!\(\*TemplateBox[<|\"boxes\" -> \
+FormBox[\"1\", TraditionalForm], \"errors\" -> {}, \"input\" -> \"1\", \
+\"state\" -> \"Boxes\"|>,\"TeXAssistantTemplate\"]\) \
+\!\(\*TemplateBox[<|\"boxes\" -> FormBox[\"\[Rule]\", TraditionalForm], \
+\"errors\" -> {}, \"input\" -> \"\\\\rightarrow\", \"state\" -> \
+\"Boxes\"|>,\"TeXAssistantTemplate\"]\) \!\(\*TemplateBox[<|\"boxes\" -> \
+FormBox[
+RowBox[{
+StyleBox[\"x\", \"TI\"], \">\", \"0\"}], TraditionalForm], \"errors\" -> {}, \
+\"input\" -> \"x > 0\", \"state\" -> \"Boxes\"|>,\"TeXAssistantTemplate\"]\)\n\
+}\>\"", ",", 
          RowBox[{"Plot", "[", 
           RowBox[{
            RowBox[{"If", "[", 
@@ -118,17 +223,45 @@ input is positive and 0 otherwise.\>\""}], "}"}]}], "}"}], ",",
       RowBox[{"{", 
        RowBox[{"Center", ",", "Center"}], "}"}]}]}], "]"}], "\n"}]}]], "Input",
  CellChangeTimes->{{3.929023840800976*^9, 3.929023841347847*^9}, {
-  3.929024042525116*^9, 3.9290240697323303`*^9}, {3.9290241381336727`*^9, 
-  3.9290241746831245`*^9}, {3.9290242163785706`*^9, 3.9290242948773193`*^9}, {
-  3.9290243556774235`*^9, 3.9290243620368023`*^9}},
- CellLabel->
-  "In[127]:=",ExpressionUUID->"d82c40f5-03b0-ce41-ae57-fd8b44adfce3"],
+  3.929024042525116*^9, 3.9290240697323313`*^9}, {3.929024138133673*^9, 
+  3.929024174683124*^9}, {3.9290242163785706`*^9, 3.92902429487732*^9}, {
+  3.929024355677424*^9, 3.929024362036803*^9}, {3.9290930829232826`*^9, 
+  3.9290931482319565`*^9}, {3.9290932176398315`*^9, 3.92909322634494*^9}, {
+  3.9290932633968563`*^9, 3.929093267639639*^9}, {3.9290971870943203`*^9, 
+  3.929097189278757*^9}, {3.929097221861103*^9, 3.929097420475651*^9}, {
+  3.9290974686297626`*^9, 3.929097475143257*^9}},
+ CellLabel->"In[43]:=",ExpressionUUID->"d82c40f5-03b0-ce41-ae57-fd8b44adfce3"],
 
 Cell[BoxData[
  TagBox[GridBox[{
     {"\<\"Activation Function\"\>", "\<\"Formula\"\>", "\<\"Graph\"\>", \
 "\<\"Description\"\>"},
-    {"\<\"Ramp (ReLU)\"\>", "\<\"f(x) = Max[0, x]\"\>", 
+    {"\<\"Ramp (ReLU)\"\>", "\<\"\\!\\(\\*TemplateBox[<|\\\"boxes\\\" -> \
+FormBox[RowBox[{StyleBox[\\\"f\\\", \\\"TI\\\"], RowBox[{\\\"(\\\", StyleBox[\
+\\\"x\\\", \\\"TI\\\"], \\\")\\\"}], \\\"\[LongEqual]\\\"}], \
+TraditionalForm], \\\"errors\\\" -> {}, \\\"input\\\" -> \\\"f (x) = \\\", \\\
+\"state\\\" -> \\\"Boxes\\\"|>,\\\"TeXAssistantTemplate\\\"]\\){\\n   \
+\\!\\(\\*TemplateBox[<|\\\"boxes\\\" -> FormBox[\\\"0\\\", TraditionalForm], \
+\\\"errors\\\" -> {}, \\\"input\\\" -> \\\" 0\\\", \\\"state\\\" -> \\\"Boxes\
+\\\"|>,\\\"TeXAssistantTemplate\\\"]\\) \\!\\(\\*TemplateBox[<|\\\"boxes\\\" \
+-> FormBox[\\\"\[Rule]\\\", TraditionalForm], \\\"errors\\\" -> {}, \\\"input\
+\\\" -> \\\"\\\\\\\\rightarrow\\\", \\\"state\\\" -> \
+\\\"Boxes\\\"|>,\\\"TeXAssistantTemplate\\\"]\\) \
+\\!\\(\\*TemplateBox[<|\\\"boxes\\\" -> FormBox[RowBox[{StyleBox[\\\"x\\\", \
+\\\"TI\\\"], \\\"<\\\", \\\"0\\\"}], TraditionalForm], \\\"errors\\\" -> {}, \
+\\\"input\\\" -> \\\"x < 0\\\", \\\"state\\\" -> \
+\\\"Boxes\\\"|>,\\\"TeXAssistantTemplate\\\"]\\),\\n   \
+\\!\\(\\*TemplateBox[<|\\\"boxes\\\" -> FormBox[StyleBox[\\\"x\\\", \
+\\\"TI\\\"], TraditionalForm], \\\"errors\\\" -> {}, \\\"input\\\" -> \\\"x\\\
+\", \\\"state\\\" -> \\\"Boxes\\\"|>,\\\"TeXAssistantTemplate\\\"]\\) \
+\\!\\(\\*TemplateBox[<|\\\"boxes\\\" -> FormBox[\\\"\[Rule]\\\", \
+TraditionalForm], \\\"errors\\\" -> {}, \\\"input\\\" -> \
+\\\"\\\\\\\\rightarrow\\\", \\\"state\\\" -> \
+\\\"Boxes\\\"|>,\\\"TeXAssistantTemplate\\\"]\\) \
+\\!\\(\\*TemplateBox[<|\\\"boxes\\\" -> FormBox[RowBox[{StyleBox[\\\"x\\\", \
+\\\"TI\\\"], \\\"\[GreaterEqual]\\\", \\\"0\\\"}], TraditionalForm], \
+\\\"errors\\\" -> {}, \\\"input\\\" -> \\\"x \\\\\\\\geq 0\\\", \\\"state\\\" \
+-> \\\"Boxes\\\"|>,\\\"TeXAssistantTemplate\\\"]\\)\\n}\\n\"\>", 
      GraphicsBox[
       InterpretationBox[{
         TagBox[{{{}, {}, 
@@ -345,7 +478,18 @@ exB00cdZk5kvI2it6Cy5xTcQ9MMjliud7iHogBk39jW+RNAcTCs8Fd8j6P3Z
        Automatic, 
         Automatic}], "\<\"Ramp outputs zero for negative values and zero, but \
 outputs x for positive values, making it a piecewise linear function.\"\>"},
-    {"\<\"Tanh\"\>", "\<\"f(x) = Tanh[x]\"\>", 
+    {"\<\"Tanh\"\>", "\<\"\\!\\(\\*TemplateBox[<|\\\"boxes\\\" -> \
+FormBox[RowBox[{StyleBox[\\\"f\\\", \\\"TI\\\"], RowBox[{\\\"(\\\", StyleBox[\
+\\\"x\\\", \\\"TI\\\"], \\\")\\\"}], \\\"\[LongEqual]\\\", \
+FractionBox[RowBox[{SuperscriptBox[StyleBox[\\\"e\\\", \\\"TI\\\"], StyleBox[\
+\\\"x\\\", \\\"TI\\\"]], \\\"-\\\", SuperscriptBox[StyleBox[\\\"e\\\", \\\"TI\
+\\\"], RowBox[{\\\"-\\\", StyleBox[\\\"x\\\", \\\"TI\\\"]}]]}], \
+RowBox[{SuperscriptBox[StyleBox[\\\"e\\\", \\\"TI\\\"], StyleBox[\\\"x\\\", \
+\\\"TI\\\"]], \\\"+\\\", SuperscriptBox[StyleBox[\\\"e\\\", \\\"TI\\\"], \
+RowBox[{\\\"-\\\", StyleBox[\\\"x\\\", \\\"TI\\\"]}]]}]]}], TraditionalForm], \
+\\\"errors\\\" -> {}, \\\"input\\\" -> \\\"f(x) = \\\\\\\\frac{e^x - \
+e^{-x}}{e^x + e^{-x}}\\\", \\\"state\\\" -> \
+\\\"Boxes\\\"|>,\\\"TeXAssistantTemplate\\\"]\\)\"\>", 
      GraphicsBox[
       InterpretationBox[{
         TagBox[{{{}, {}, 
@@ -585,7 +729,14 @@ tpeCS8GzYhhyArNMcnyY/RTcEvCKtNOMcQnN5SMUWE8tiX+uIHCixTsicpKC
         Automatic}], "\<\"Tanh takes inputs and maps them to the range (-1, \
 1), and it's symmetric around the origin, so negative inputs produce negative \
 outputs and positive inputs produce positive outputs.\"\>"},
-    {"\<\"Sin\"\>", "\<\"f(x) = Sin[x]\"\>", 
+    {"\<\"Sin\"\>", "\<\"\\!\\(\\*TemplateBox[<|\\\"boxes\\\" -> \
+FormBox[RowBox[{StyleBox[\\\"f\\\", \\\"TI\\\"], RowBox[{\\\"(\\\", StyleBox[\
+\\\"x\\\", \\\"TI\\\"], \\\")\\\"}], \\\"\[LongEqual]\\\", \
+StyleBox[\\\"S\\\", \\\"TI\\\"], StyleBox[\\\"i\\\", \\\"TI\\\"], StyleBox[\\\
+\"n\\\", \\\"TI\\\"], RowBox[{\\\"[\\\", StyleBox[\\\"x\\\", \\\"TI\\\"], \
+\\\"]\\\"}]}], TraditionalForm], \\\"errors\\\" -> {}, \\\"input\\\" -> \\\"f \
+(x) = Sin[x]\\\", \\\"state\\\" -> \\\"Boxes\\\"|>,\\\"TeXAssistantTemplate\\\
+\"]\\)\"\>", 
      GraphicsBox[
       InterpretationBox[{
         TagBox[{{{}, {}, 
@@ -1461,7 +1612,15 @@ hCcGqCnB/4ljiqcVGgvS78D//34X+//vd8v+D6jrLro=
          Scaled[0.05]}},
       Ticks->{
        Automatic, Automatic}], "\<\"Sin outputs sin(x) for any input x.\"\>"},
-    {"\<\"Sigmoid\"\>", "\<\"f(x) = 1 / (1 + Exp[-x])\"\>", 
+    {"\<\"Sigmoid\"\>", "\<\"\\!\\(\\*TemplateBox[<|\\\"boxes\\\" -> \
+FormBox[RowBox[{StyleBox[\\\"f\\\", \\\"TI\\\"], RowBox[{\\\"(\\\", StyleBox[\
+\\\"x\\\", \\\"TI\\\"], \\\")\\\"}], \\\"\[LongEqual]\\\", \\\"1\\\", \\\"/\\\
+\", RowBox[{\\\"(\\\", RowBox[{\\\"1\\\", \\\"+\\\", StyleBox[\\\"E\\\", \
+\\\"TI\\\"], StyleBox[\\\"x\\\", \\\"TI\\\"], StyleBox[\\\"p\\\", \
+\\\"TI\\\"], RowBox[{\\\"[\\\", RowBox[{\\\"-\\\", StyleBox[\\\"x\\\", \\\"TI\
+\\\"]}], \\\"]\\\"}]}], \\\")\\\"}]}], TraditionalForm], \\\"errors\\\" -> \
+{}, \\\"input\\\" -> \\\"f (x) = 1 / (1 + Exp[-x])\\\", \\\"state\\\" -> \
+\\\"Boxes\\\"|>,\\\"TeXAssistantTemplate\\\"]\\)\"\>", 
      GraphicsBox[
       InterpretationBox[{
         TagBox[{{{}, {}, 
@@ -1970,7 +2129,32 @@ wW0qPJcdnFi6O8ZCRaRheSOeDb0VLRQIXnxmZ+45ni/xbft1dIaF+A3f64Xy
        Automatic, 
         Automatic}], "\<\"Sigmoid is very similar to tanh in shape, but the \
 key difference is that it maps input values to the range (0, 1) instead.\"\>"},
-    {"\<\"Threshold\"\>", "\<\"f(x) = If[x > 0, 1, 0]\"\>", 
+    {"\<\"Threshold\"\>", "\<\"\\!\\(\\*TemplateBox[<|\\\"boxes\\\" -> \
+FormBox[RowBox[{StyleBox[\\\"f\\\", \\\"TI\\\"], RowBox[{\\\"(\\\", StyleBox[\
+\\\"x\\\", \\\"TI\\\"], \\\")\\\"}], \\\"\[LongEqual]\\\"}], \
+TraditionalForm], \\\"errors\\\" -> {}, \\\"input\\\" -> \\\"f (x) =\\\", \
+\\\"state\\\" -> \\\"Boxes\\\"|>,\\\"TeXAssistantTemplate\\\"]\\){\\n   \
+\\!\\(\\*TemplateBox[<|\\\"boxes\\\" -> FormBox[\\\"0\\\", TraditionalForm], \
+\\\"errors\\\" -> {}, \\\"input\\\" -> \\\" 0\\\", \\\"state\\\" -> \\\"Boxes\
+\\\"|>,\\\"TeXAssistantTemplate\\\"]\\) \\!\\(\\*TemplateBox[<|\\\"boxes\\\" \
+-> FormBox[\\\"\[Rule]\\\", TraditionalForm], \\\"errors\\\" -> {}, \\\"input\
+\\\" -> \\\"\\\\\\\\rightarrow\\\", \\\"state\\\" -> \
+\\\"Boxes\\\"|>,\\\"TeXAssistantTemplate\\\"]\\) \
+\\!\\(\\*TemplateBox[<|\\\"boxes\\\" -> FormBox[RowBox[{StyleBox[\\\"x\\\", \
+\\\"TI\\\"], \\\"\[LessEqual]\\\", \\\"0\\\"}], TraditionalForm], \
+\\\"errors\\\" -> {}, \\\"input\\\" -> \\\"x \\\\\\\\leq 0\\\", \\\"state\\\" \
+-> \\\"Boxes\\\"|>,\\\"TeXAssistantTemplate\\\"]\\),\\n   \
+\\!\\(\\*TemplateBox[<|\\\"boxes\\\" -> FormBox[\\\"1\\\", TraditionalForm], \
+\\\"errors\\\" -> {}, \\\"input\\\" -> \\\"1\\\", \\\"state\\\" -> \
+\\\"Boxes\\\"|>,\\\"TeXAssistantTemplate\\\"]\\) \
+\\!\\(\\*TemplateBox[<|\\\"boxes\\\" -> FormBox[\\\"\[Rule]\\\", \
+TraditionalForm], \\\"errors\\\" -> {}, \\\"input\\\" -> \
+\\\"\\\\\\\\rightarrow\\\", \\\"state\\\" -> \
+\\\"Boxes\\\"|>,\\\"TeXAssistantTemplate\\\"]\\) \
+\\!\\(\\*TemplateBox[<|\\\"boxes\\\" -> FormBox[RowBox[{StyleBox[\\\"x\\\", \
+\\\"TI\\\"], \\\">\\\", \\\"0\\\"}], TraditionalForm], \\\"errors\\\" -> {}, \
+\\\"input\\\" -> \\\"x > 0\\\", \\\"state\\\" -> \
+\\\"Boxes\\\"|>,\\\"TeXAssistantTemplate\\\"]\\)\\n}\"\>", 
      GraphicsBox[
       InterpretationBox[{
         TagBox[{{{}, {}, 
@@ -2193,9 +2377,8 @@ ZH/A+euiFyz/XPETzg+3rfc4sfcXnL8xLlfJ6s9vOP8HlzPzztC/cH7QRWsz
    GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
   "Grid"]], "Output",
- CellChangeTimes->{3.9290238656220646`*^9, 3.9290260194161644`*^9},
- CellLabel->
-  "Out[127]=",ExpressionUUID->"8fbe05cc-d394-0d44-8b58-25c2b37cdc0e"]
+ CellChangeTimes->{3.9290974771156254`*^9},
+ CellLabel->"Out[43]=",ExpressionUUID->"b6944896-b2ea-8b42-b54c-3c5feb7293e7"]
 }, Open  ]]
 }, Open  ]],
 
@@ -2203,7 +2386,7 @@ Cell[CellGroupData[{
 
 Cell["Explanation", "Section",
  CellChangeTimes->{{3.929025887214344*^9, 
-  3.9290258895282154`*^9}},ExpressionUUID->"6b03d8c0-927f-934a-bdaa-\
+  3.929025889528215*^9}},ExpressionUUID->"6b03d8c0-927f-934a-bdaa-\
 e6763a32f4c2"],
 
 Cell["\<\
@@ -2215,7 +2398,7 @@ negative numbers, while others don\[CloseCurlyQuote]t. These characteristics \
 will be very important in the implementation portion of this paper, as they \
 will largely dictate the behavior of the neural network.\
 \>", "Text",
- CellChangeTimes->{{3.929025896811001*^9, 3.9290259907426567`*^9}, {
+ CellChangeTimes->{{3.929025896811001*^9, 3.929025990742657*^9}, {
   3.929026108537054*^9, 
   3.9290261596175346`*^9}},ExpressionUUID->"52fef657-8d0d-ae4c-a36b-\
 cb3e4cdca201"]
@@ -2245,13 +2428,13 @@ Cell[583, 22, 179, 3, 98, "Title",ExpressionUUID->"4b7dc9fb-cc9b-484c-a456-63c5f
 Cell[CellGroupData[{
 Cell[787, 29, 153, 3, 67, "Section",ExpressionUUID->"aa70e405-f283-3943-aefa-6fd7b26b9dd5"],
 Cell[CellGroupData[{
-Cell[965, 36, 3849, 88, 276, "Input",ExpressionUUID->"d82c40f5-03b0-ce41-ae57-fd8b44adfce3"],
-Cell[4817, 126, 112939, 2071, 717, "Output",ExpressionUUID->"8fbe05cc-d394-0d44-8b58-25c2b37cdc0e"]
+Cell[965, 36, 8480, 196, 463, "Input",ExpressionUUID->"d82c40f5-03b0-ce41-ae57-fd8b44adfce3"],
+Cell[9448, 234, 118229, 2146, 741, "Output",ExpressionUUID->"b6944896-b2ea-8b42-b54c-3c5feb7293e7"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[117805, 2203, 158, 3, 67, "Section",ExpressionUUID->"6b03d8c0-927f-934a-bdaa-e6763a32f4c2"],
-Cell[117966, 2208, 725, 12, 81, "Text",ExpressionUUID->"52fef657-8d0d-ae4c-a36b-cb3e4cdca201"]
+Cell[127726, 2386, 156, 3, 67, "Section",ExpressionUUID->"6b03d8c0-927f-934a-bdaa-e6763a32f4c2"],
+Cell[127885, 2391, 723, 12, 81, "Text",ExpressionUUID->"52fef657-8d0d-ae4c-a36b-cb3e4cdca201"]
 }, Open  ]]
 }, Open  ]]
 }

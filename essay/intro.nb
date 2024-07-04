@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       161,          7]
-NotebookDataLength[      2247,         63]
-NotebookOptionsPosition[      1769,         46]
-NotebookOutlinePosition[      2174,         62]
-CellTagsIndexPosition[      2131,         59]
+NotebookDataLength[      2975,         74]
+NotebookOptionsPosition[      2497,         57]
+NotebookOutlinePosition[      2902,         73]
+CellTagsIndexPosition[      2859,         70]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -26,25 +26,36 @@ Cell["Introduction", "Title",
 1bc038c3d05a"],
 
 Cell["\<\
+Neural networks are one of the most researched topics in academia today and \
+for good reason. They show promise in countless fields, ranging from control \
+mechanisms for autonomous vehicles to the analysis of medical images to \
+models that can outperform top players in games like chess. Inspired by the \
+human brain, their structure is defined by multiple layers of neurons, in \
+which each neuron processes input data from the previous layer, implements \
+some function on the data, and passes on the output data to the next layer. \
+Perhaps the most important part of these models are the weights and biases. \
+Weights multiply inputs, thereby controlling the influence any given part of \
+an input has on the activation of a give-n neuron, and biases are added to \
+this product (allowing each neuron to output a different range of values \
+independently from the input).
 
-This project\[CloseCurlyQuote]s purpose is to examine untrained neural \
-networks with randomly generated weights and biases, and although this limits \
-the real-world applications of the models, it is very useful in understanding \
-neural network behavior. Applying common activation functions to these \
-initialized networks and modifying the network depth allows us to visually \
-represent the initial outputs , where we can determine which combinations \
-result in unexpected results and try to understand why this happens. Before \
-starting, it\[CloseCurlyQuote]s important to outline our expectations, so \
+This project examines the influence of weights on the outputs of an untrained \
+neural network. By initializing weights from different \
 \>", "Text",
  CellChangeTimes->{{3.92892557667774*^9, 3.928925597277426*^9}, {
-  3.928925710296349*^9, 3.9289258534020596`*^9}, {3.928925892707228*^9, 
-  3.9289259002968063`*^9}, {3.9289262246082077`*^9, 3.9289262494203997`*^9}, {
-  3.928926325637036*^9, 3.928926363701023*^9}, {3.9289367094440346`*^9, 
-  3.928936757694935*^9}},ExpressionUUID->"f5a97fe4-c9ba-ad48-9307-\
+   3.928925710296349*^9, 3.9289258534020596`*^9}, {3.928925892707228*^9, 
+   3.9289259002968063`*^9}, {3.9289262246082077`*^9, 3.928926249420401*^9}, {
+   3.928926325637036*^9, 3.928926363701023*^9}, {3.928936709444035*^9, 
+   3.928936757694935*^9}, {3.929098485487217*^9, 3.929098556668316*^9}, {
+   3.929098668982949*^9, 3.929098782965973*^9}, {3.929099022246931*^9, 
+   3.9290991168419704`*^9}, {3.929099259063366*^9, 3.929099326557078*^9}, {
+   3.929099382817892*^9, 3.929099486986805*^9}, {3.9291051867419624`*^9, 
+   3.929105280081684*^9}, 
+   3.9291058542667427`*^9},ExpressionUUID->"f5a97fe4-c9ba-ad48-9307-\
 c22e1d39c1b8"]
 }, Open  ]]
 },
-WindowSize->{1141.2, 573.6},
+WindowSize->{1141.2, 568.8},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
 FrontEndVersion->"14.0 for Microsoft Windows (64-bit) (December 16, 2023)",
 StyleDefinitions->"Default.nb",
@@ -63,7 +74,7 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[583, 22, 157, 3, 98, "Title",ExpressionUUID->"af5eed60-1c56-e44c-90ce-1bc038c3d05a"],
-Cell[743, 27, 1010, 16, 127, "Text",ExpressionUUID->"f5a97fe4-c9ba-ad48-9307-c22e1d39c1b8"]
+Cell[743, 27, 1738, 27, 196, "Text",ExpressionUUID->"f5a97fe4-c9ba-ad48-9307-c22e1d39c1b8"]
 }, Open  ]]
 }
 ]
